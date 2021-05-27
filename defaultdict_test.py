@@ -11,6 +11,7 @@ class Visits:
         self.data = defaultdict(set)
 
     def add(self, country, city):
+        # 访问这种字典的任意键时，总能得到一个已经存在的set实例，如果用setdefault，在字典里已经有这个键的情况还会毫无必要地分配一些set.
         self.data[country].add(city)
 
 
