@@ -5,6 +5,7 @@
 # @Software: PyCharm
 from collections import namedtuple
 # 不要把函数返回的多个数值拆分到三个以上的变量
+# gitee改邮箱后测试连接
 
 
 lengths = [63, 73, 72, 60, 67, 66, 71, 61, 72, 70]
