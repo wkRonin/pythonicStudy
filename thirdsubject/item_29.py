@@ -48,3 +48,7 @@ foundd = ((name, batches) for name in order
          if (batches := get_batches(stock.get(name, 0), 8)))
 print(next(foundd))
 print(next(foundd))
+
+# 注意： 如果推导逻辑不带条件，而表示新值的那一部分又使用了：=操作符，那么操作符左边的变量就会泄露到包含这条推导语句的作用域里
+half = [(last := count // 2) for count in stock.values()]
+print(f'Last item of {half} is {last}')
