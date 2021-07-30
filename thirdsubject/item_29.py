@@ -20,6 +20,7 @@ stock = {
 order = ['screws', 'wingnuts', 'clips']
 
 
+# 整除保留整数
 def get_batches(count, size):
     return count // size
 
