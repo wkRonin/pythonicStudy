@@ -43,3 +43,7 @@ def test_static():
     for i in data:
         assert i == stack.pop()
     assert stack.pop() == -1
+
+
+if __name__ == '__main__':
+    test_static()
