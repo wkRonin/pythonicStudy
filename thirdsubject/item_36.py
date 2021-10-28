@@ -2,14 +2,15 @@
 # @Time    : 2021/10/28 22:19
 # @Author  : wkRonin
 # @File    :item_36.py
-
-# Example 1
+from pprint import pprint
 import itertools
+
+
+# Example 1 查看帮助文档
 
 # help(itertools)
 
-# Example 2
-from pprint import pprint
+# Example 2 chain连接多个迭代器
 
 it = itertools.chain([1, 2, 3], [4, 5, 6])
 print(list(it))
